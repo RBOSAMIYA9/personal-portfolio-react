@@ -283,7 +283,7 @@ function BlogPost() {
                             <Box d="flex" color="gray" flexGrow="2"><Text as="span">{postDate.toLocaleDateString('default', options)}</Text><Text as="span" mx="2">|</Text><Text as="span">{postReadingTime}</Text></Box>
                             <Box d={["none", "flex", "flex", "flex"]} justifyContent="space-between" flexGrow="1" >
 
-                                <Sharebuttons variant={"smaller"} />
+                                <Sharebuttons variant={"smaller"} textToShare={`Check this out *${post.title.rendered}* \n\n ${window.location.href}`} />
                             </Box>
                         </Box>
 
@@ -294,7 +294,7 @@ function BlogPost() {
 
                         </Text>
 
-                        <ShareBar />
+                        <ShareBar textToShare={`Check this out *${post.title.rendered}* \n\n ${window.location.href}`} />
                         <Divider my="8" borderColor="gray.400" />
                         <Box>
                             <Center flexDirection="column">

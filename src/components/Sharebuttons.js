@@ -45,16 +45,19 @@ var facebookURL = `https://www.facebook.com/sharer/sharer.php?u=${encodedWebsite
 var linkedinURL = `https://www.linkedin.com/shareArticle/?mini=true&url=${encodedWebsiteURL}`
 
 
-function Sharebuttons({ variant }) {
+function Sharebuttons({ variant, textToShare }) {
+
+    // var sharingText = textToShare;
+    // console.log("text to share", textToShare, "variant", variant)
     const toast = useToast()
     const toastIdRef = React.useRef()
     var IconSize;
     if (variant === "smaller") {
-        console.log("smaller variant")
+        // console.log("smaller variant")
         IconSize = 20;
     }
     else {
-        console.log("larger variant", variant)
+        // console.log("larger variant", variant)
         IconSize = 25
     }
 
@@ -78,7 +81,7 @@ function Sharebuttons({ variant }) {
         <>
             <Box cursor="pointer" as="a" href={twitterURL} target="_blank" rel="noopener noreferrer" ><FaTwitter size={IconSize} /></Box>
             <Box cursor="pointer" as="a" href={facebookURL} target="_blank" rel="noopener noreferrer" ><FaFacebook size={IconSize} /></Box>
-            <Box cursor="pointer" d={["block", "block", "none", "none"]} as="a" href="whatsapp://send?text=The text to share!" data-action="share/whatsapp/share" target="_blank" rel="noopener noreferrer"><IoLogoWhatsapp size={IconSize} /></Box>
+            <Box cursor="pointer" d={["block", "block", "none", "none"]} as="a" href={`whatsapp://send?text=${textToShare}`} data-action="share/whatsapp/share" target="_blank" rel="noopener noreferrer"><IoLogoWhatsapp size={IconSize} /></Box>
             <Box cursor="pointer" d={["none", "none", "block", "block"]} as="a" href={linkedinURL} data-action="share/whatsapp/share" target="_blank" rel="noopener noreferrer"><FaLinkedin size={IconSize} /></Box>
             <Box cursor="pointer" as="a" onClick={() => copy()} ><FaLink size={IconSize} /></Box>
             {/* <Image src={linkedin} w={`${IconSize.toString()}px`} h={`${IconSize.toString()}px`} /> */}

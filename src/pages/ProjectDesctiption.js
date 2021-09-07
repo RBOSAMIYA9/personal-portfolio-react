@@ -58,7 +58,7 @@ function ProjectDesctiption() {
         if (loading) {
             return (<>
                 <Helmet>
-                  
+
                     <title>Loading...</title>
 
                 </Helmet>
@@ -70,7 +70,7 @@ function ProjectDesctiption() {
         else if (project === null) {
             return (<>
                 <Helmet>
-                  
+
                     <title>No project</title>
 
                 </Helmet>
@@ -86,7 +86,7 @@ function ProjectDesctiption() {
             return (
                 <>
                     <Helmet>
-                        
+
                         <title> {project.title.rendered}</title>
 
                     </Helmet>
@@ -107,7 +107,7 @@ function ProjectDesctiption() {
 
                                 </Text>
                                 <Divider my="8" borderColor="gray.400" />
-                                <ShareBar />
+                                <ShareBar textToShare={`Check this out *${project.title.rendered}* \n\n ${window.location.href}`} />
                                 <Divider my="8" borderColor="gray.400" />
                                 <Box mt="5">
 
