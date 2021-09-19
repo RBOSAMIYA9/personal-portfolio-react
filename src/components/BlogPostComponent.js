@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 import parse from 'html-react-parser';
 import WPAPI from 'wpapi';
-import '../pages/postStyles.css'
+import '../pages/customStyles.css'
 import NoImage from '../images/noImage.jpg'
 import readingTime from 'reading-time';
 
@@ -53,7 +53,7 @@ function BlogPostComponent({ postData, postCategories }) {
                 })
             }
             else {
-                console.log("else ma ivu")
+                // console.log("else ma ivu")
                 setImageUrl(NoImage);
                 resolve("noImage");
             }

@@ -30,6 +30,8 @@ import ContactData from '../contactInfo.json'
 import readingTime from 'reading-time';
 import { Helmet } from "react-helmet";
 
+import '../pages/customStyles.css'
+
 const url = "https://ravindra-portfolio.000webhostapp.com/wp-json/"
 
 // const url = "http://rb-portfolio.rf.gd/wp-json/wp/v2/posts"

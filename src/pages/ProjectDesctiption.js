@@ -18,6 +18,7 @@ import ShareBar from "../components/ShareBar";
 import ContactButtons from "../components/ContactButtons";
 import Empty from '../images/empty.svg'
 import { Helmet } from "react-helmet";
+import '../pages/customStyles.css'
 
 
 // const url = "http://rb-portfolio.rf.gd/wp-json/wp/v2/posts"
@@ -102,10 +103,10 @@ function ProjectDesctiption() {
 
                             <Box>
 
-                                <Text className="project-description">
+                                <div  className="project-description">
                                     {parse(project.content.rendered)}
 
-                                </Text>
+                                </div>
                                 <Divider my="8" borderColor="gray.400" />
                                 <ShareBar textToShare={`Check this out *${project.title.rendered}* \n\n ${window.location.href}`} />
                                 <Divider my="8" borderColor="gray.400" />
