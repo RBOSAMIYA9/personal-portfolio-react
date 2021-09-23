@@ -33,9 +33,10 @@ function AboutSection() {
                             <Text as="h1" fontSize="3xl" fontWeight="500" lineHeight="1" mb="3"  >Little bit about
                                 <Text color="royalblue">myself</Text> </Text>
                             <Text as="p" fontWeight="400" >
-                                I'm an enthusiast embedded engineer
-                                having one and half year of hands on experience
-                                working in the tech industry.
+                                I'm an enthusiast full stack engineer having
+                                8 months experience of running startup
+                                1.3 year of hands on  experience  working in embedded engineering domain.
+
                             </Text>
                         </Box>
                     </ScrollAnimation>

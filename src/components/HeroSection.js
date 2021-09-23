@@ -9,6 +9,8 @@ import {
 import HeroSVG from './HeroSVG'
 import ContactData from '../contactInfo.json'
 
+const resumeURL = "https://drive.google.com/file/d/1OU4Mfh3_DmEUaKDWKGk1XMbm6ABoqywB/view?usp=sharing"
+
 function HeroSection() {
 
     // eslint-disable-next-line 
@@ -85,7 +87,10 @@ function HeroSection() {
 
                     <Box as="a" href={`mailto:${ContactData.email}`}><Button variant="primary" m="8" ml="0">Hire me</Button></Box>
 
-                    <Button variant="secondary">View Resume</Button>
+                    <Box as="a" href={resumeURL} target="_blank">
+                        <Button variant="secondary">View Resume</Button>
+                    </Box>
+
                 </Box>
                 <Box w={["100vw", "100vw", "50vw", "50vw"]} order={["1", "1", "2", "2"]}>
                     <HeroSVG />
