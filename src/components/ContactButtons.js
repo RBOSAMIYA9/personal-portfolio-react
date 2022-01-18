@@ -42,7 +42,7 @@ function ContactButtons({ defaultDirection }) {
                     // animateOut="fadeOut"
                     duration={0.6}
                     delay={0}>
-                    <Box as="a" href={`tel:${ContactData.phone}`}>
+                    <Box as="a" href={`tel:${ContactData.number}`}>
                         <Button fontWeight="bold" variant="secondary" m='5' w={["80%", "80%", "", ""]} p="20px" justifyContent='center' textAlign='center'  >
                             <Image src={Phone} h="30px" w="30px" />Call</Button>
                     </Box>
