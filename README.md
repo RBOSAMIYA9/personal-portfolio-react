@@ -1,6 +1,6 @@
 # Personal Portfolio ⚡️
 
-> https://ravindrabosamiya.tech
+> https://ravindrabosamiya.netlify.app/
 
 ⭐ Star me on GitHub — it helps!
 
@@ -25,7 +25,7 @@
 ✔️ Skills \
 ✔️ Blogs (dynamic) \
 ✔️ Contact 
-To view a live example, **[click here](https://ravindrabosamiya.tech/)**
+To view a live example, **[click here](https://ravindrabosamiya.netlify.app/)**
 
 ## Tools Used 🛠️
 - React js (main framework)
