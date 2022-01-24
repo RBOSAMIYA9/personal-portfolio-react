@@ -9,7 +9,7 @@ import {
 import HeroSVG from './HeroSVG'
 import ContactData from '../contactInfo.json'
 
-const resumeURL = "https://drive.google.com/file/d/1OU4Mfh3_DmEUaKDWKGk1XMbm6ABoqywB/view?usp=sharing"
+const resumeURL = "https://drive.google.com/file/d/18gyAMkLAv5CB4LNGXKP1DRO_SxUgtZRI/view?usp=sharing"
 
 function HeroSection() {
 
