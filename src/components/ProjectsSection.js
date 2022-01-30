@@ -15,7 +15,7 @@ import Error from "./ErrorComponent";
 // Football@10
 
 
-var projectURL = "https://ravindra-portfolio.000webhostapp.com/wp-json/wp/v2/projects"
+var projectURL = "https://ravindra-portfolio.000webhostapp.com/wp-json/wp/v2/projects?orderby=modified"
 
 function ProjectsSection() {
 

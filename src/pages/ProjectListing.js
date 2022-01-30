@@ -29,7 +29,7 @@ function ProjectListing() {
     const [selectedCategory, setSelectedCategory] = useState("all");
 
     var projectCategoryURL = "https://ravindra-portfolio.000webhostapp.com/wp-json/wp/v2/projectcategory"
-    var projectURL = "https://ravindra-portfolio.000webhostapp.com/wp-json/wp/v2/projects"
+    var projectURL = "https://ravindra-portfolio.000webhostapp.com/wp-json/wp/v2/projects?orderby=modified"
     var projectBycategoryURL = "https://ravindra-portfolio.000webhostapp.com/wp-json/wp/v2/projects?projectcategory="
 
 
