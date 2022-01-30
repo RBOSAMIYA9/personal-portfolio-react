@@ -47,7 +47,7 @@ function ProjectComponent({ aimationDuration, data }) {
                     </Box>
 
                     {seeDemoLink !== null &&
-                        <Box as="a" href={seeDemoLink}>
+                        <Box as="a" href={seeDemoLink} target="_blank" rel="noopener noreferrer">
                             <Button variant="secondary" my="5">See Demo</Button>
                         </Box>
 
